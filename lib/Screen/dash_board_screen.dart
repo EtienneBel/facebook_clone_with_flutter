@@ -65,21 +65,21 @@ class _DashBoardScreenState extends State<DashBoardScreen> {
                     Tab(
                         icon: ClipOval(
                       child: Image.asset(
-                        'assets/Images/girls3.jpg',
+                        'assets/Images/EtienneBel (1).jpg',
                         height: 30,
-                        width: 40,
+                        width: 50,
                         fit: BoxFit.cover,
                       ),
                     )),
                   ]),
             ),
             body: const TabBarView(children: [
-              ProfileScreen(),
               HomeScreen(),
               VideoScreen(),
               FriendsScreen(),
               StoreScreen(),
               NotificationScreen(),
+              ProfileScreen()
             ]),
           )),
     );
