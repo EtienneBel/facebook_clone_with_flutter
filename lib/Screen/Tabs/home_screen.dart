@@ -1,3 +1,4 @@
+import 'package:facebook_clone/Widgets/other_user_story_card.dart';
 import 'package:facebook_clone/domain/custom_text_style.dart';
 import 'package:flutter/material.dart';
 
@@ -67,7 +68,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   child: Stack(
                     children: [
                       Container(
-                        height: 100,
+                        height: 120,
                         width: 120,
                         decoration: const BoxDecoration(
                           borderRadius: BorderRadius.only(
@@ -75,14 +76,14 @@ class _HomeScreenState extends State<HomeScreen> {
                             topRight: Radius.circular(10),
                           ),
                           image: DecorationImage(
-                            image: AssetImage(
-                                "assets/Images/pexels-eliasdecarvalho-1375849.jpg"),
+                            image:
+                                AssetImage("assets/Images/EtienneBel (1).jpg"),
                             fit: BoxFit.cover,
                           ),
                         ),
                       ),
                       Positioned(
-                        top: 84,
+                        top: 103,
                         left: 38,
                         child: Container(
                           decoration: BoxDecoration(
@@ -108,10 +109,32 @@ class _HomeScreenState extends State<HomeScreen> {
                     ],
                   ),
                 ),
-              )
+              ),
+              OtherUserStoryCard(
+                userName: "Priya Sharma",
+                imagePath: "assets/Images/pexels-dana-tentis-118658-364382.jpg",
+              ),
+              OtherUserStoryCard(
+                userName: "Priya Sharma",
+                imagePath: "assets/Images/pexels-eliasdecarvalho-1375849.jpg",
+              ),
+              OtherUserStoryCard(
+                userName: "Priya Sharma",
+                imagePath:
+                    "assets/Images/pexels-harsh-raj-gond-218020-1485031.jpg",
+              ),
+              OtherUserStoryCard(
+                userName: "Priya Sharma",
+                imagePath: "assets/Images/pexels-ira-dulger-647031-1452129.jpg",
+              ),
+              OtherUserStoryCard(
+                userName: "Priya Sharma",
+                imagePath: "assets/Images/pexels-leonnebrito-1844012.jpg",
+              ),
             ],
           ),
-        )
+        ),
+        Divider(thickness: 4),
       ],
     ));
   }
