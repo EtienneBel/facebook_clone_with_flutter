@@ -54,6 +54,64 @@ class _HomeScreenState extends State<HomeScreen> {
             const Icon(Icons.image, color: Colors.green)
           ],
         ),
+        Divider(thickness: 4),
+        SizedBox(
+          height: 200,
+          child: ListView(
+            scrollDirection: Axis.horizontal,
+            children: [
+              SizedBox(
+                height: 200,
+                width: 120,
+                child: Card(
+                  child: Stack(
+                    children: [
+                      Container(
+                        height: 100,
+                        width: 120,
+                        decoration: const BoxDecoration(
+                          borderRadius: BorderRadius.only(
+                            topLeft: Radius.circular(10),
+                            topRight: Radius.circular(10),
+                          ),
+                          image: DecorationImage(
+                            image: AssetImage(
+                                "assets/Images/pexels-eliasdecarvalho-1375849.jpg"),
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                      ),
+                      Positioned(
+                        top: 84,
+                        left: 38,
+                        child: Container(
+                          decoration: BoxDecoration(
+                            color: Colors.blueAccent,
+                            borderRadius: BorderRadius.circular(100),
+                            border: Border.all(color: Colors.white, width: 2),
+                          ),
+                          child: const Icon(
+                            Icons.add,
+                            size: 30,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ),
+                      Positioned(
+                        bottom: 4,
+                        left: 14,
+                        child: Text(
+                          "Create story",
+                          style: myTextStyle15(),
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+              )
+            ],
+          ),
+        )
       ],
     ));
   }
