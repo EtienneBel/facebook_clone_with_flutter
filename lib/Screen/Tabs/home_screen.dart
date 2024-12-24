@@ -1,4 +1,5 @@
 import 'package:facebook_clone/Widgets/other_user_story_card.dart';
+import 'package:facebook_clone/Widgets/user_post_card.dart';
 import 'package:facebook_clone/domain/custom_text_style.dart';
 import 'package:flutter/material.dart';
 
@@ -135,6 +136,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ),
         Divider(thickness: 4),
+        UserPostCard()
       ],
     ));
   }
